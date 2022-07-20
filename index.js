@@ -86,9 +86,13 @@ function playRound(computerSelection, playerSelection) {
    computerScoreBtn.textContent = computerScore;
 
    if (playerScore == 5){
-    alert('YOU WON');
+    if(alert('YOU WON')){} 
+    else   window.location.reload(); 
+    
    } else if (computerScore == 5){
-    alert('COMPUTER WON')
+    if(alert('COMPUTER WON')){} 
+    else   window.location.reload(); 
+    
    }
     }
 
