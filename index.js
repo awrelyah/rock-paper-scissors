@@ -35,15 +35,10 @@ function computerPlay() {
 //play one round
 function playRound(computerSelection, playerSelection) {
     computerSelection = computerPlay();
-    //playerSelection = prompt("Rock, Paper, Scissors").toLowerCase();
     playerSelection = this.textContent.toLowerCase();
 
-    
     playerSelect.textContent = playerSelection;
     compSelect.textContent = computerSelection;
-
-    console.log(playerSelection);
-    console.log(computerSelection);
 
     //if player chooses rock
     if (playerSelection == "rock"){
@@ -78,13 +73,12 @@ function playRound(computerSelection, playerSelection) {
         } else {
             result.textContent = "It's a tie";
         }
-    //if player doesn't choose a valid option NOT NEEDED ANYMORE I GUESS
-    } //else if (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors"){
-        //alert("Please choose either Rock, Paper or Scissors");
-   // }   
+    } 
+
    playerScoreBtn.textContent = playerScore;
    computerScoreBtn.textContent = computerScore;
 
+   // final result & reload
    if (playerScore == 5){
     if(alert('YOU WON')){} 
     else   window.location.reload(); 
@@ -93,24 +87,10 @@ function playRound(computerSelection, playerSelection) {
     if(alert('COMPUTER WON')){} 
     else   window.location.reload(); 
     
+   } else if (computerScore == 5 && playerScore == 5) {
+    if(alert("IT'S A TIE")){} 
+    else   window.location.reload(); 
    }
-    }
 
-
-    //NOT NEEDED ANYMORE IG
-    function game(){
-        for (let i = 0; i < 3; i++){
-            playRound();
-            console.log(playerScore);
-            console.log(computerScore);
-        }
-
-         if (playerScore > computerScore) {
-            console.log("You won!");
-        } else if (computerScore > playerScore){
-            console.log("You lose!");
-        } else {
-            console.log("It's a tie");
-        }
     }
 
