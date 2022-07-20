@@ -5,37 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
     <script src="index.js" defer ></script>
 </head>
 <body>
     
-    <div>
-        ROCK PAPER SCISSORS
-    </div>
-    <br>
-    <div>Make your selection:</div>
-    <div class="playerButtons">
-        <button type="button" id="rock">ROCK</button>
-        <button type="button" id="paper">PAPER</button>
-        <button type="button" id="scissors">SCISSORS</button>
+    <div class="game">
+        <div class="title">
+            ROCK PAPER SCISSORS
+        </div>
 
-    </div>
-    <br>
-    <div class="selections">
-        <div>You chose <span  id="playerselection"></span></div>
-        <div>Computer chose <span  id="compselection"></span></span></div>
-        <br>
-        <div id="result"></div>
-    </div>
-<br>
-    <div id="scores"> SCORES:
-        <br>
-        <br>
-        YOU:
-        <div id="playerscore"></div>
-        COMPUTER:
-        <div id="compscore"></div>
-    </div>
+        <div class="selections">
+            <div>Make your selection:</div>
 
+            <div class="playerButtons">
+                <button type="button" id="rock">ROCK</button>
+                <button type="button" id="paper">PAPER</button>
+                <button type="button" id="scissors">SCISSORS</button>
+            </div>
+
+            <div class="choices">
+                <div>You chose <span  id="playerselection"></span></div>
+                <div>Computer chose <span  id="compselection"></span></span></div>
+                <div id="result"></div>
+             </div>
+        </div>
+
+        <div id="scores">
+            <div>SCORES</div>
+
+            <div class="container">
+                <div>
+                    <div>YOU:</div>
+                    <div id="playerscore"></div>
+                </div>
+                
+                <div>
+                    <div>COMPUTER:</div>
+                    <div id="compscore"></div>
+                </div>
+            </div>
+         </div>
+
+</div>
 </body>
 </html>
